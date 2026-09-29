@@ -125,12 +125,7 @@ public class Main {
         System.out.println("Programa encerrado com sucesso!");
     }
 
-    // --- FUNÇÕES DE VALIDAÇÃO E RETORNO AO MENU ---
-
-    /**
-     * Le um valor inteiro dentro do intervalo especificado [min, max].
-     * Retorna -1 em caso de entrada invalida ou fora do intervalo para acionar o continue do menu.
-     */
+    
     public static int lerOpcaoValida(Scanner scanner, int min, int max) {
         try {
             int opcao = scanner.nextInt();
@@ -146,9 +141,7 @@ public class Main {
         }
     }
 
-    /**
-     * Le um inteiro positivo maior que zero.
-     */
+   
     public static int lerNumeroPositivo(Scanner scanner) {
         try {
             int valor = scanner.nextInt();
@@ -164,9 +157,7 @@ public class Main {
         }
     }
 
-    /**
-     * Le qualquer numero inteiro evitando crash por texto.
-     */
+    
     public static int lerInteiroQualquer(Scanner scanner) {
         try {
             return scanner.nextInt();
@@ -177,7 +168,7 @@ public class Main {
         }
     }
 
-    // --- MÉTODOS DE SUPORTE E ORDENAÇÃO ---
+    
 
     public static void preencher(int[] v, int valorMinimo, int valorMaximo) {
         Random rd = new Random();
