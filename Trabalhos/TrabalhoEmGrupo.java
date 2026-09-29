@@ -12,7 +12,7 @@ public class Main {
                 "amora", "Framboesa", "cereja" };
 
         while (true) {
-            System.out.println("\n================ MENU CONSOLIDADO ================");
+            System.out.println("\n================ MENU CONSOLIDADO ================\n");
             System.out.println("Qual Vetor você deseja utilizar?");
             System.out.println("1- Lista de frutas (Strings)");
             System.out.println("2- Lista de números aleatórios (Inteiros)");
@@ -27,6 +27,11 @@ public class Main {
             System.out.println("1- QuickSort");
             System.out.println("2- MergeSort");
             int escolhaAlgoritmo = scanner.nextInt();
+
+            if (escolhaAlgoritmo != 1 && escolhaAlgoritmo != 2) {
+                System.out.println("Opção inválida! Tente novamente.");
+                continue;
+            }
 
 
             if (escolhaArray == 1) {
