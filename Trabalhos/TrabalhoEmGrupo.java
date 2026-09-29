@@ -18,7 +18,6 @@ public class Main {
             System.out.println("1- Lista de frutas (Strings)");
             System.out.println("2- Lista de números aleatórios (Inteiros)");
             
-            // Valida entrada do tipo de array
             int escolhaArray = lerOpcaoValida(scanner, 1, 2);
             if (escolhaArray == -1) continue;
 
@@ -26,7 +25,6 @@ public class Main {
             System.out.println("1- QuickSort");
             System.out.println("2- MergeSort");
             
-            // Valida entrada do algoritmo
             int escolhaAlgoritmo = lerOpcaoValida(scanner, 1, 2);
             if (escolhaAlgoritmo == -1) continue;
 
